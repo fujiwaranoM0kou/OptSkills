@@ -1,0 +1,34 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Generated runtime output
+outputs/
+*.progress.json
+runtime_logs/
+samples/
+
+# Optimization solver artifacts
+*.lp
+*.mps
+*.nl
+*.sol
+*.soln
+*.glp
+*.set
+
+# Editors and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+smoke_test_optmath_12_pipeline.ps1

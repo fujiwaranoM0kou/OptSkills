@@ -1,0 +1,22 @@
+name: optskills
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.12
+  - pip
+  - coin-or-cbc=2.10.13
+  - glpk=5.0
+  - ipopt=3.14.19
+  - scip=10.0.1
+  - pip:
+      - python-dotenv==1.2.2
+      - numpy==2.4.4
+      - pandas==2.3.3
+      - networkx==3.6.1
+      - ortools==9.15.6755
+      - pyomo==6.10.0
+      - highspy==1.12.0
+      - pulp==3.3.0
+      - mip==1.17.6
+      - gurobipy==13.0.1
