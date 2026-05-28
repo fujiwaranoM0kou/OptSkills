@@ -32,3 +32,4 @@ samples/
 Thumbs.db
 
 smoke_test_optmath_12_pipeline.ps1
+datasets/smoke_test/
