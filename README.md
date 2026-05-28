@@ -25,34 +25,14 @@
         <a href='https://github.com/fujiwaranoM0kou/OptSkills'><img src='https://img.shields.io/badge/GitHub-Repo-blue'></a>
   </p>  
 </p>
+<p align="center">
+  <img src="./assets/framework.png" alt="Framework" width="1000">
+</p>
 
 OptSkills is a skill enhanced agent system for
 natural-language optimization tasks. It uses a function-calling
 LLM agent to formulate and solve problems with Python solver backends, while
 maintaining reusable optimization skills.
-
-## Performance
-
-OptSkills performs remarkably across 5 benchmarks.
-
-*Comparison of the SA metric (Pass@1) across five benchmarks. OptSkills-DeepSeek and OptSkills-Qwen are based on DeepSeek-V3.2 and Qwen3-235B-A22b-instruct-2507, respectively. **Bold** indicates 1st, *italic* indicates 2nd, and <u>underline</u> indicates 3rd.*
-
-| Category | Models / Methods | Macro-Avg. | Micro-Avg. | Rank | OptiBench | Mamo.Complex | OptMATH | IndustryOR | ComplexOR |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| General Models | GPT-5.4 | 51.71 | 57.82 | 6 | 69.09 | 47.39 | 46.39 | 29.00 | *66.67* |
-| General Models | Gemini-3.1-Pro | 53.58 | 57.88 | 5 | 66.56 | 46.45 | <u>54.22</u> | <u>34.00</u> | *66.67* |
-| General Models | Qwen3-235B | 42.63 | 52.36 | 7 | 63.80 | 41.71 | 39.76 | 29.00 | 38.89 |
-| General Models | DeepSeek-V3.2 | 43.21 | 49.45 | 9 | 62.64 | 27.49 | 40.36 | 30.00 | 55.56 |
-| Agent-based Methods | Chain-of-Experts | 38.84 | 52.36 | 8 | 62.31 | 51.66 | 35.54 | 28.00 | 16.67 |
-| Agent-based Methods | OptiMUS | 34.14 | 45.18 | 13 | 60.99 | 27.49 | 22.89 | 26.00 | 33.33 |
-| Agent-based Methods | ORMind | 36.69 | 47.37 | 11 | 61.82 | 34.60 | 21.69 | 32.00 | 33.33 |
-| Agent-based Methods | ORThought | 41.92 | 46.91 | 12 | 57.69 | 38.86 | 26.51 | 31.00 | 55.56 |
-| Agent-based Methods | LEAN-LLM-OPT | 41.23 | 49.27 | 10 | 62.15 | 43.13 | 22.89 | 28.00 | 50.00 |
-| Agent-based Methods | AlphaOPT | 50.92 | 58.55 | 4 | 70.25 | <u>54.50</u> | 36.75 | 32.00 | 61.11 |
-| Skill-based Methods | Trace2Skill | <u>56.97</u> | <u>63.46</u> | <u>2</u> | <u>75.21</u> | *54.03* | 49.40 | <u>34.00</u> | **72.22** |
-| Skill-based Methods | OptSkills-Qwen | *54.64* | *61.46* | *3* | *71.74* | 53.55 | <u>54.22</u> | 27.00 | *66.67* |
-| Skill-based Methods | OptSkills-DeepSeek | **62.04** | **68.27** | **1** | **77.02** | **63.51** | **61.45** | **36.00** | **72.22** |
-
 
 ## Installation
 ### Gurobi License
@@ -85,6 +65,31 @@ cp .env.example .env
 | `OPTSKILL_EMBED_API_KEY` | API key for the embedding endpoint. | `sk-...` |
 | `OPTSKILL_EMBED_MODEL` | Embedding model identifier. | `text-embedding-3-large` |
 
+## Repository Layout
+
+```text
+OptSkills/
+|-- main.py                         # Command-line entry point
+|-- environment.yml                 # Reproducible Conda environment and solver dependencies
+|-- agents/                         # Function-calling agent and rollout orchestration
+|-- llm/                            # Chat and embedding API clients
+|-- pipeline/                       # Stage runners, dataset loading, outputs, and resume logic
+|-- prompts/                        # Extractor, solver-agent, and skill prompts
+|-- skill_core/                     # Skill extraction, clustering, selection, and refinement
+|-- tools/                          # Tool registration and run_code exposure
+|-- utils/                          # Logging, parsing, code execution, and skill syntax utilities
+|-- lists/
+|   `-- solvers/                    # Solver catalog exposed to the rollout agent
+|       |-- ortools/
+|       `-- pyomo/
+|-- skill_library/                  # Released skill libraries
+|   |-- skill_library_cluster/
+|   |-- skill_library_learned/
+|   `-- skill_library_nanoco_learned/
+`-- datasets/
+    |-- train_set/                  # Training datasets, including Nano-CO
+    `-- benchmark/                  # Evaluation benchmarks, including MIPLIB-NL
+```
 
 ## Usage
 
@@ -193,28 +198,24 @@ python main.py --phase eval \
 | `skill_library/skill_library_learned` | Default learned library for standard evaluation. |
 | `skill_library/skill_library_nanoco_learned` | Learned library extended with Nano-CO trajectories. |
 
-## Repository Layout
+## Performance
 
-```text
-OptSkills/
-|-- main.py                         # Command-line entry point
-|-- environment.yml                 # Reproducible Conda environment and solver dependencies
-|-- agents/                         # Function-calling agent and rollout orchestration
-|-- llm/                            # Chat and embedding API clients
-|-- pipeline/                       # Stage runners, dataset loading, outputs, and resume logic
-|-- prompts/                        # Extractor, solver-agent, and skill prompts
-|-- skill_core/                     # Skill extraction, clustering, selection, and refinement
-|-- tools/                          # Tool registration and run_code exposure
-|-- utils/                          # Logging, parsing, code execution, and skill syntax utilities
-|-- lists/
-|   `-- solvers/                    # Solver catalog exposed to the rollout agent
-|       |-- ortools/
-|       `-- pyomo/
-|-- skill_library/                  # Released skill libraries
-|   |-- skill_library_cluster/
-|   |-- skill_library_learned/
-|   `-- skill_library_nanoco_learned/
-`-- datasets/
-    |-- train_set/                  # Training datasets, including Nano-CO
-    `-- benchmark/                  # Evaluation benchmarks, including MIPLIB-NL
-```
+OptSkills performs remarkably across 5 benchmarks.
+
+*Comparison of the SA metric (Pass@1) across five benchmarks. OptSkills-DeepSeek and OptSkills-Qwen are based on DeepSeek-V3.2 and Qwen3-235B-A22b-instruct-2507, respectively. **Bold** indicates 1st, *italic* indicates 2nd, and <u>underline</u> indicates 3rd.*
+
+| Category | Models / Methods | Macro-Avg. | Micro-Avg. | Rank | OptiBench | Mamo.Complex | OptMATH | IndustryOR | ComplexOR |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| General Models | GPT-5.4 | 51.71 | 57.82 | 6 | 69.09 | 47.39 | 46.39 | 29.00 | *66.67* |
+| General Models | Gemini-3.1-Pro | 53.58 | 57.88 | 5 | 66.56 | 46.45 | <u>54.22</u> | <u>34.00</u> | *66.67* |
+| General Models | Qwen3-235B | 42.63 | 52.36 | 7 | 63.80 | 41.71 | 39.76 | 29.00 | 38.89 |
+| General Models | DeepSeek-V3.2 | 43.21 | 49.45 | 9 | 62.64 | 27.49 | 40.36 | 30.00 | 55.56 |
+| Agent-based Methods | Chain-of-Experts | 38.84 | 52.36 | 8 | 62.31 | 51.66 | 35.54 | 28.00 | 16.67 |
+| Agent-based Methods | OptiMUS | 34.14 | 45.18 | 13 | 60.99 | 27.49 | 22.89 | 26.00 | 33.33 |
+| Agent-based Methods | ORMind | 36.69 | 47.37 | 11 | 61.82 | 34.60 | 21.69 | 32.00 | 33.33 |
+| Agent-based Methods | ORThought | 41.92 | 46.91 | 12 | 57.69 | 38.86 | 26.51 | 31.00 | 55.56 |
+| Agent-based Methods | LEAN-LLM-OPT | 41.23 | 49.27 | 10 | 62.15 | 43.13 | 22.89 | 28.00 | 50.00 |
+| Agent-based Methods | AlphaOPT | 50.92 | 58.55 | 4 | 70.25 | <u>54.50</u> | 36.75 | 32.00 | 61.11 |
+| Skill-based Methods | Trace2Skill | <u>56.97</u> | <u>63.46</u> | <u>2</u> | <u>75.21</u> | *54.03* | 49.40 | <u>34.00</u> | **72.22** |
+| Skill-based Methods | OptSkills-Qwen | *54.64* | *61.46* | *3* | *71.74* | 53.55 | <u>54.22</u> | 27.00 | *66.67* |
+| Skill-based Methods | OptSkills-DeepSeek | **62.04** | **68.27** | **1** | **77.02** | **63.51** | **61.45** | **36.00** | **72.22** |
