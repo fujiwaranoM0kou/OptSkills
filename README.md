@@ -1,6 +1,6 @@
 # OptSkills
 
-OptSkills is a skill enhanced agent pipeline for
+OptSkills is a skill enhanced agent system for
 natural-language optimization tasks. It uses a function-calling
 LLM agent to formulate and solve problems with Python solver backends, while
 maintaining reusable optimization skills.
