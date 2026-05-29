@@ -1,24 +1,24 @@
 
 <h2 align="center">OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation </h2>
 <p align="center">
-    <a href=""><strong>Haochen Yang</strong></a><sup>1,*</sup>
+    <a href="https://github.com/fujiwaranoM0kou"><strong>Haochen Yang</strong></a><sup>1,*</sup>
     ·
-    <a href=""><strong>Ke Zhao</strong></a><sup>1,*</sup>
+    <a href="https://github.com/ZhaoKe1024"><strong>Ke Zhao</strong></a><sup>1,*</sup>
     ·
-    <a href=""><strong>Mengyuan Ma</strong></a><sup>1</sup>
+    <strong>Mengyuan Ma</strong><sup>1</sup>
     ·
-    <a href=""><strong>Xingyu Lu</strong></a><sup>3</sup>
+    <strong>Xingyu Lu</strong><sup>3</sup>
     <br>
-    <a href=""><strong>Xiangfeng Wang</strong></a><sup>1</sup>
+    <strong>Xiangfeng Wang</strong><sup>1</sup>
     ·
-    <a href=""><strong>Hong Qian</strong></a><sup>1,2,†</sup>
+    <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,2,†</sup>
     <div align='center'>
         <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Authors.
     </div>
     <p align="center">
-        <b>East China Normal University    |    Shanghai Innovation Institute   |   AntGroup  </b></p> 
+        <b>East China Normal University<sup>1</sup>    |    Shanghai Innovation Institute<sup>2</sup>   |   AntGroup<sup>3</sup>  </b></p> 
     <p align="center">
-        <a href="#"><img src='https://img.shields.io/badge/Paper-OptSkills-red'></a>
+        <a href="http://arxiv.org/abs/2605.29829"><img src='https://img.shields.io/badge/Paper-OptSkills-red'></a>
         <!-- <a href='https://huggingface.co/ant-opt/LLMOPT-Qwen2.5-14B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
         <!-- <a href=''><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow'></a> -->
         <!-- <a href='https://github.com/antgroup/LLMOPT/tree/main/data/testset'><img src='https://img.shields.io/badge/Dataset-Testset-blue'></a> -->
