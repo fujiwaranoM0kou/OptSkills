@@ -220,7 +220,7 @@ OptSkills performs remarkably across 5 benchmarks.
 | Skill-based Methods | OptSkills-Qwen | *54.64* | *61.46* | *3* | *71.74* | 53.55 | <u>54.22</u> | 27.00 | *66.67* |
 | Skill-based Methods | OptSkills-DeepSeek | **62.04** | **68.27** | **1** | **77.02** | **63.51** | **61.45** | **36.00** | **72.22** |
 
----
+=======
 ## 💭 Citation
 
 If you find this repository useful in your research, please cite:
