@@ -16,7 +16,7 @@
         <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Authors.
     </div>
     <p align="center">
-        <b>East China Normal University<sup>1</sup>    |    Shanghai Innovation Institute<sup>2</sup>   |   AntGroup<sup>3</sup>  </b></p> 
+        <b><sup>1</sup>East China Normal University    |    <sup>2</sup>Shanghai Innovation Institute   |   <sup>3</sup>AntGroup  </b></p> 
     <p align="center">
         <a href="http://arxiv.org/abs/2605.29829"><img src='https://img.shields.io/badge/Paper-OptSkills-red'></a>
         <!-- <a href='https://huggingface.co/ant-opt/LLMOPT-Qwen2.5-14B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
