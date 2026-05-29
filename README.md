@@ -219,3 +219,21 @@ OptSkills performs remarkably across 5 benchmarks.
 | Skill-based Methods | Trace2Skill | <u>56.97</u> | <u>63.46</u> | <u>2</u> | <u>75.21</u> | *54.03* | 49.40 | <u>34.00</u> | **72.22** |
 | Skill-based Methods | OptSkills-Qwen | *54.64* | *61.46* | *3* | *71.74* | 53.55 | <u>54.22</u> | 27.00 | *66.67* |
 | Skill-based Methods | OptSkills-DeepSeek | **62.04** | **68.27** | **1** | **77.02** | **63.51** | **61.45** | **36.00** | **72.22** |
+
+
+---
+## 💭 Citation
+
+If you find this repository useful in your research, please cite:
+
+```bibtex
+@misc{yang2026optskillslearninggeneralizableoptimization,
+      title={OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation}, 
+      author={Haochen Yang and Ke Zhao and Mengyuan Ma and Xingyu Lu and Xiangfeng Wang and Hong Qian},
+      year={2026},
+      eprint={2605.29829},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2605.29829}, 
+}
+```
