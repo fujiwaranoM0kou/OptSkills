@@ -9,7 +9,7 @@
     <a href="#"><strong>Mengyuan Ma</strong></a><sup>1</sup>
     ·
     <a href="#"><strong>Xingyu Lu</strong></a><sup>2</sup>
-    <br>
+    ·
     <a href="#"><strong>Xiangfeng Wang</strong></a><sup>4,5</sup>
     ·
     <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,3,†</sup>
@@ -20,19 +20,17 @@
 </div>
 
 <p align="center">
-    <b>
-        <sup>1</sup>East China Normal University
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <sup>2</sup>Ant Group
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <sup>3</sup>Shanghai Innovation Institute
-    </b>
+    <sup>1</sup>Shanghai Institute of AI for Education and School of Computer Science and Technology,<br>
+    East China Normal University, Shanghai, China
     <br>
-    <b>
-        <sup>4</sup>Key Laboratory of Mathematics and Engineering Applications (MoE), East China Normal University
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <sup>5</sup>Shenzhen Loop Area Institute (SLAI)
-    </b>
+    <sup>2</sup>Ant Group, China
+    <br>
+    <sup>3</sup>Shanghai Innovation Institute, Shanghai, China
+    <br>
+    <sup>4</sup>Key Laboratory of Mathematics and Engineering Applications (MoE) and School of Mathematical Sciences,<br>
+    East China Normal University, Shanghai, China
+    <br>
+    <sup>5</sup>Shenzhen Loop Area Institute (SLAI), Shenzhen, China
 </p>
 
 <p align="center">
@@ -42,10 +40,12 @@
 
 <h2 align="center">[News]</h2>
 
-<p align="center">
-    <strong>[2026.08]</strong> 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.<br>
-    <strong>[2026.05]</strong> 📄 We released the arXiv preprint of <em>OptSkills</em>.
-</p>
+<h4 align="center">[2026.08] 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.</h4>
+<h4 align="center">[2026.05] 📄 We released the arXiv preprint of <em>OptSkills</em>.</h4>
+
+<hr>
+
+
 <p align="center">
   <img src="./assets/framework.png" alt="Framework" width="1000">
 </p>
