@@ -1,4 +1,10 @@
-<h2 align="center">[Findings of EMNLP 2026] OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation</h2>
+<h2 align="center">
+OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation
+</h2>
+
+<h3 align="center">
+EMNLP 2026 (Findings)
+</h3>
 
 <p align="center">
     <a href="https://github.com/fujiwaranoM0kou"><strong>Haochen Yang</strong></a><sup>1,*</sup>
