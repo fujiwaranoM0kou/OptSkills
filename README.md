@@ -1,5 +1,6 @@
 
-<h2 align="center">OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation </h2>
+<h2 align="center">[Findings of EMNLP 2026] OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation</h2>
+
 <p align="center">
     <a href="https://github.com/fujiwaranoM0kou"><strong>Haochen Yang</strong></a><sup>1,*</sup>
     ·
@@ -7,23 +8,43 @@
     ·
     <a href="#"><strong>Mengyuan Ma</strong></a><sup>1</sup>
     ·
-    <a href="#"><strong>Xingyu Lu</strong></a><sup>3</sup>
+    <a href="#"><strong>Xingyu Lu</strong></a><sup>2</sup>
     <br>
-    <a href="#"><strong>Xiangfeng Wang</strong></a><sup>1</sup>
+    <a href="#"><strong>Xiangfeng Wang</strong></a><sup>4,5</sup>
     ·
-    <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,2,†</sup>
-    <div align='center'>
-        <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Authors.
-    </div>
-    <p align="center">
-        <b><sup>1</sup>East China Normal University    |    <sup>2</sup>Shanghai Innovation Institute   |   <sup>3</sup>AntGroup  </b></p> 
-    <p align="center">
-        <a href="http://arxiv.org/abs/2605.29829"><img src='https://img.shields.io/badge/Paper-OptSkills-red'></a>
-        <!-- <a href='https://huggingface.co/ant-opt/LLMOPT-Qwen2.5-14B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
-        <!-- <a href=''><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow'></a> -->
-        <!-- <a href='https://github.com/antgroup/LLMOPT/tree/main/data/testset'><img src='https://img.shields.io/badge/Dataset-Testset-blue'></a> -->
-        <a href='https://github.com/fujiwaranoM0kou/OptSkills'><img src='https://img.shields.io/badge/GitHub-Repo-blue'></a>
-  </p>  
+    <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,3,†</sup>
+</p>
+
+<div align="center">
+    <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author.
+</div>
+
+<p align="center">
+    <b>
+        <sup>1</sup>East China Normal University
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <sup>2</sup>Ant Group
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <sup>3</sup>Shanghai Innovation Institute
+    </b>
+    <br>
+    <b>
+        <sup>4</sup>Key Laboratory of Mathematics and Engineering Applications (MoE), East China Normal University
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <sup>5</sup>Shenzhen Loop Area Institute (SLAI)
+    </b>
+</p>
+
+<p align="center">
+    <a href="http://arxiv.org/abs/2605.29829"><img src="https://img.shields.io/badge/Paper-OptSkills-red"></a>
+    <a href="https://github.com/fujiwaranoM0kou/OptSkills"><img src="https://img.shields.io/badge/GitHub-Repo-blue"></a>
+</p>
+
+<h2 align="center">[News]</h2>
+
+<p align="center">
+    <strong>[2026.08]</strong> 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.<br>
+    <strong>[2026.05]</strong> 📄 We released the arXiv preprint of <em>OptSkills</em>.
 </p>
 <p align="center">
   <img src="./assets/framework.png" alt="Framework" width="1000">
