@@ -40,11 +40,8 @@
 
 <h2 align="center">[News]</h2>
 
-<h4 align="center">[2026.08] 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.</h4>
-<h4 align="center">[2026.05] 📄 We released the arXiv preprint of <em>OptSkills</em>.</h4>
-
-<hr>
-
+<h3 align="center">[2026.08] 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.</h3>
+<h3 align="center">[2026.05] 📄 We released the arXiv preprint of <em>OptSkills</em>.</h3>
 
 <p align="center">
   <img src="./assets/framework.png" alt="Framework" width="1000">
