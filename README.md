@@ -1,4 +1,3 @@
-
 <h2 align="center">[Findings of EMNLP 2026] OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation</h2>
 
 <p align="center">
@@ -38,10 +37,16 @@
     <a href="https://github.com/fujiwaranoM0kou/OptSkills"><img src="https://img.shields.io/badge/GitHub-Repo-blue"></a>
 </p>
 
-<h2 align="center">[News]</h2>
+<hr>
+
+<h2 align="center">📰 [News]</h2>
 
 <h3 align="center">[2026.08] 🎉 Our paper has been accepted to <strong>Findings of EMNLP 2026</strong>.</h3>
 <h3 align="center">[2026.05] 📄 We released the arXiv preprint of <em>OptSkills</em>.</h3>
+
+<hr>
+
+## 🧩 Overview
 
 <p align="center">
   <img src="./assets/framework.png" alt="Framework" width="1000">
@@ -52,28 +57,38 @@ natural-language optimization tasks. It uses a function-calling
 LLM agent to formulate and solve problems with Python solver backends, while
 maintaining reusable optimization skills.
 
-## Installation
+<hr>
+
+## 🛠️ Installation
+
 ### Gurobi License
+
 Gurobi requires a valid license. See [Gurobi Academic Licensing](https://www.gurobi.com/academics).
 
 ### Prerequisites
+
 - Python 3.12.12
 - Conda
 
 ### Setup
+
 ```bash
-#clone this repository
+# Clone this repository
 cd OptSkills
-#conda create
+
+# Create Conda environment
 conda env create -f environment.yml
 conda activate optskills
+
 # Linux/macOS
 cp .env.example .env
+
 # Windows PowerShell
 # Copy-Item .env.example .env
 ```
 
 ### Environment Configuration
+
 | Variable | Meaning | Example |
 |---|---|---|
 | `OPTSKILL_BASE_URL` | OpenAI-compatible chat-completions API base URL. | `https://api.deepseek.com/v1` |
@@ -83,12 +98,14 @@ cp .env.example .env
 | `OPTSKILL_EMBED_API_KEY` | API key for the embedding endpoint. | `sk-...` |
 | `OPTSKILL_EMBED_MODEL` | Embedding model identifier. | `text-embedding-3-large` |
 
-## Repository Layout
+<hr>
+
+## 🗂️ Repository Layout
 
 ```text
 OptSkills/
 |-- main.py                         # Command-line entry point
-|-- environment.yml                 # Reproducible Conda environment and solver dependencies
+|-- environment.yml                # Reproducible Conda environment and solver dependencies
 |-- agents/                         # Function-calling agent and rollout orchestration
 |-- llm/                            # Chat and embedding API clients
 |-- pipeline/                       # Stage runners, dataset loading, outputs, and resume logic
@@ -109,9 +126,12 @@ OptSkills/
     `-- benchmark/                  # Evaluation benchmarks, including MIPLIB-NL
 ```
 
-## Usage
+<hr>
+
+## 🚀 Usage
 
 ### 1. Construct an Initial Library (`cluster`)
+
 The following command takes the first 150 instances of `optmath-train-300.jsonl` as the
 clustering subset and saves the split definition into the run state.
 
@@ -208,7 +228,9 @@ python main.py --phase eval \
   --resume
 ```
 
-## Released Skill Libraries
+<hr>
+
+## 📦 Released Skill Libraries
 
 | Library | Description |
 |---|---|
@@ -216,7 +238,9 @@ python main.py --phase eval \
 | `skill_library/skill_library_learned` | Default learned library for standard evaluation. |
 | `skill_library/skill_library_nanoco_learned` | Learned library extended with Nano-CO trajectories. |
 
-## Performance
+<hr>
+
+## 📊 Performance
 
 OptSkills performs remarkably across 5 benchmarks.
 
@@ -238,7 +262,8 @@ OptSkills performs remarkably across 5 benchmarks.
 | Skill-based Methods | OptSkills-Qwen | *54.64* | *61.46* | *3* | *71.74* | 53.55 | <u>54.22</u> | 27.00 | *66.67* |
 | Skill-based Methods | OptSkills-DeepSeek | **62.04** | **68.27** | **1** | **77.02** | **63.51** | **61.45** | **36.00** | **72.22** |
 
-=======
+<hr>
+
 ## 💭 Citation
 
 If you find this repository useful in your research, please cite:
