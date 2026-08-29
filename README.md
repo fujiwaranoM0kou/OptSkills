@@ -275,13 +275,11 @@ OptSkills performs remarkably across 5 benchmarks.
 If you find this repository useful in your research, please cite:
 
 ```bibtex
-@misc{yang2026optskillslearninggeneralizableoptimization,
+@misc{yang2026optskills,
       title={OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation}, 
       author={Haochen Yang and Ke Zhao and Mengyuan Ma and Xingyu Lu and Xiangfeng Wang and Hong Qian},
+      booktitle={The 2026 Conference on Empirical Methods in Natural Language Processing},
       year={2026},
-      eprint={2605.29829},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2605.29829}, 
+      url={https://openreview.net/forum?id=SNslAIFmfe}
 }
 ```
