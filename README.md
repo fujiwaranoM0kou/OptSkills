@@ -254,7 +254,7 @@ If you find this repository useful in your research, please cite:
       author={Haochen Yang and Ke Zhao and Mengyuan Ma and Xingyu Lu and Xiangfeng Wang and Hong Qian},
       booktitle={Findings of the Association for Computational Linguistics: {EMNLP} 2026},
       year={2026},
-      address = "Budapest, Hungary",
+      address={Budapest, Hungary},
       url={https://openreview.net/forum?id=SNslAIFmfe}
 }
 ```
