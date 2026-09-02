@@ -6,37 +6,11 @@ OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes vi
 EMNLP 2026 (Findings)
 </h3>
 
-<p align="center">
-    <a href="https://github.com/fujiwaranoM0kou"><strong>Haochen Yang</strong></a><sup>1,*</sup>
-    ·
-    <a href="https://github.com/ZhaoKe1024"><strong>Ke Zhao</strong></a><sup>1,*</sup>
-    ·
-    <a href="#"><strong>Mengyuan Ma</strong></a><sup>1</sup>
-    ·
-    <a href="#"><strong>Xingyu Lu</strong></a><sup>2</sup>
-    ·
-    <a href="#"><strong>Xiangfeng Wang</strong></a><sup>4,5</sup>
-    ·
-    <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,3,†</sup>
-</p>
+<p align="center"> <a href="https://github.com/fujiwaranoM0kou"><strong>Haochen Yang</strong></a><sup>1,*</sup> · <a href="https://github.com/ZhaoKe1024"><strong>Ke Zhao</strong></a><sup>1,*</sup> · <a href="#"><strong>Mengyuan Ma</strong></a><sup>1</sup> · <a href="#"><strong>Xingyu Lu</strong></a><sup>2</sup> · <a href="#"><strong>Xiangfeng Wang</strong></a><sup>4,5</sup> · <a href="https://github.com/HQian-AI"><strong>Hong Qian</strong></a><sup>1,3,†</sup> </p>
 
-<div align="center">
-    <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author.
-</div>
+<div align="center"> <sup>*</sup>Equal Contribution, <sup>†</sup>Corresponding Author. </div>
 
-<p align="center">
-    <sup>1</sup>Shanghai Institute of AI for Education and School of Computer Science and Technology,<br>
-    East China Normal University, Shanghai, China
-    <br>
-    <sup>2</sup>Ant Group, China
-    <br>
-    <sup>3</sup>Shanghai Innovation Institute, Shanghai, China
-    <br>
-    <sup>4</sup>Key Laboratory of Mathematics and Engineering Applications (MoE) and School of Mathematical Sciences,<br>
-    East China Normal University, Shanghai, China
-    <br>
-    <sup>5</sup>Shenzhen Loop Area Institute (SLAI), Shenzhen, China
-</p>
+<p align="center"> <sup>1</sup>Shanghai Institute of AI for Education and School of Computer Science and Technology,<br> East China Normal University, Shanghai, China <br> <sup>2</sup>Ant Group, Hangzhou, China <br> <sup>3</sup>Shanghai Innovation Institute, Shanghai, China <br> <sup>4</sup>Key Laboratory of Mathematics and Engineering Applications (MoE) and School of<br> Mathematical Sciences, East China Normal University, Shanghai, China <br> <sup>5</sup>Shenzhen Loop Area Institute, Shenzhen, China </p>
 
 <p align="center">
     <a href="http://arxiv.org/abs/2605.29829"><img src="https://img.shields.io/badge/Paper-OptSkills-red"></a>
