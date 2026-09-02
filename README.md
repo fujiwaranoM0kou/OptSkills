@@ -250,7 +250,7 @@ If you find this repository useful in your research, please cite:
 
 ```bibtex
 @inproceedings{yang2026optskills,
-      title={OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation}, 
+      title={{O}pt{S}kills: {L}earning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation}, 
       author={Haochen Yang and Ke Zhao and Mengyuan Ma and Xingyu Lu and Xiangfeng Wang and Hong Qian},
       booktitle={Findings of the Association for Computational Linguistics: EMNLP 2026},
       year={2026},
